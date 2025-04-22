@@ -1,14 +1,45 @@
 .container {
-    margin: 5% 20%;
+	margin: 5% 20%;
 }
 
 .introduction {
-    width: 50%;
-    color: #24408e;
+	width: 50%;
+	color: #24408e;
 }
 
 .orange-text {
-    color: #e37d00;
-    font-family: "Quicksand", sans-serif;
-    font-weight: bold;
+	color: #e37d00;
+	font-family: "Quicksand", sans-serif;
+	font-weight: bold;
+}
+
+.project-container {
+	padding: 20px;
+	margin: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	background-color: #929dbb;
+	box-shadow: 5px 5px 10px rgba(36, 64, 142, 0.8);
+	border-radius: 10px;
+}
+
+.softw-container {
+	height: 40%;
+	width: 30%;
+	padding: 10px;
+	border: 1px solid #24408e;
+	border-radius: 10px;
+}
+
+.softw-logo {
+	height: 60px;
+	/* width: 60px; */
+	object-fit: cover;
+	margin: 10px;
+}
+
+.screen-board {
+	width: 65%;
+	padding: 10px;
+	border-radius: 10px;
 }
