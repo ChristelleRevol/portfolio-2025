@@ -1,0 +1,14 @@
+.container {
+    margin: 5% 20%;
+}
+
+.introduction {
+    width: 50%;
+    color: #24408e;
+}
+
+.orange-text {
+    color: #e37d00;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}
