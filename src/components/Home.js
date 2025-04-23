@@ -1,4 +1,5 @@
 import "../styles/home.css";
+import Ai-anim from "./Ai-anim.js"
 
 import ruby from "../assets/Logos/ruby.png";
 import rails from "../assets/Logos/rails.png";
@@ -90,8 +91,11 @@ function Home() {
 					<img src={figma} alt="figma" class="softw-logo" />
 					<img src={trello} alt="trello" class="softw-logo" />
 				</div>
-				<div>
+				<div class="screen-container">
 					<img src={board} alt="board page" class="screen-board" />
+				</div>
+				<div>
+					<Ai-anim />
 				</div>
 			</div>
 		</div>

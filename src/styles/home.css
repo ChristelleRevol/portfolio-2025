@@ -16,16 +16,20 @@
 .project-container {
 	padding: 20px;
 	margin: 20px 0;
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 10px;
 	background-color: #929dbb;
 	box-shadow: 5px 5px 10px rgba(36, 64, 142, 0.8);
 	border-radius: 10px;
 }
 
 .softw-container {
-	height: 40%;
-	width: 30%;
+	grid-column: 1 / 3;
+	grid-row: 1 / 2;
+	/* height: 40%; */
+	width: 40%;
 	padding: 10px;
 	border: 1px solid #24408e;
 	border-radius: 10px;
@@ -39,7 +43,13 @@
 }
 
 .screen-board {
-	width: 65%;
-	padding: 10px;
 	border-radius: 10px;
+	width: 100%;
+}
+
+.screen-container {
+	grid-column: 2 / 4;
+	grid-row: 1 / 2;
+	/* flex-grow: 1; */
+	margin-right: 5%;
 }
