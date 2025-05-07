@@ -1,5 +1,7 @@
 import "../styles/home.css";
-import Ai-anim from "./Ai-anim.js"
+import AiDuel from "./Ai-duel.js";
+import CharactRbnb from "./Charact-rbnb.js";
+import "@dotlottie/player-component";
 
 import ruby from "../assets/Logos/ruby.png";
 import rails from "../assets/Logos/rails.png";
@@ -8,96 +10,129 @@ import css from "../assets/Logos/CSS.png";
 import javascript from "../assets/Logos/JavaScript.png";
 import figma from "../assets/Logos/Figma.png";
 import bootstrap from "../assets/Logos/Bootstrap.png";
-import trello from "../assets/Logos/trello.png";
+import react from "../assets/Logos/react.png";
 import heroku from "../assets/Logos/heroku.png";
 import sql from "../assets/Logos/Sql.png";
 import ubuntu from "../assets/Logos/ubuntu.png";
 import stimulus from "../assets/Logos/stimulus.png";
 
-import board from "../assets/Screenshots/Board.jpg";
+import mapbox from "../assets/Logos/mapbox.png";
+import openai from "../assets/Logos/openai.png";
+import mistral from "../assets/Logos/Mistral.png";
+import claude from "../assets/Logos/claude.png";
 
 function Home() {
+	console.log("width: ", window.innerWidth);
 	return (
 		<div class="container">
 			<div class="introduction">
 				<p>
 					Bonjour, je suis Christelle Revol!
-					<p></p>
-					Storyboardeuse et illustratrice pendant 5 ans où j'ai développé mes
-					compétences en créativité, adaptabilité et collaboration en équipe,
-					J'ai choisi de débuter une nouvelle aventure professionelle dans le
-					développement web.
-					<p></p>
-					Ce choix du domaine de la tech résulte d'une évolution naturelle, car
-					j'ai toujours un certain lien avec ce domaine grâce à de nombreuses
-					personnes de mon entourage travaillant dans ce secteur. Ma curiosité
-					pour cette industrie s'est donc muée en volonté d'y prendre part à mon
-					tour.
-					<br />
-					Pour m'aider dans cette reconversion, j'ai choisi de suivre une
-					formation intensive de 9 semaines en développement web avec Le Wagon.
-					J'ai ainsi appris à:
+					<p />
+					Storyboardeuse et illustratrice reconvertie dans le développement web
+					fullstack, J'ai à cœur de mettre mes compétences au services de
+					projets innovants alliant technologie et lucidité sur les enjeux de
+					demain
 				</p>
-				<ul>
-					<li>
-						Coder du <span class="orange-text">back-end</span> avec{" "}
-						<span class="orange-text">Ruby on Rails</span>{" "}
-					</li>
-					<li>
-						Le développement <span class="orange-text">front-end</span> avec{" "}
-						<span class="orange-text">HTML, CSS</span> et{" "}
-						<span class="orange-text">Javascript</span>, ainsi que les
-						frameworks <span class="orange-text">React, Vue</span> et{" "}
-						<span class="orange-text">Stimulus</span>{" "}
-					</li>
-					<li>
-						Créer et gérer des <span class="orange-text">databases</span> et le
-						langage <span class="orange-text">SQL</span>{" "}
-					</li>
-					<li>
-						Gérer des projets et leur déploiement avec{" "}
-						<span class="orange-text">Github</span> et{" "}
-						<span class="orange-text">Heroku</span>{" "}
-					</li>
-					<li>
-						Faire des <span class="orange-text">appels d'api</span>, avec{" "}
-						<span class="orange-text">
-							Mapbox, Cloudinary, OpenAI, Anthropic
-						</span>{" "}
-						et <span class="orange-text">Mistral</span>{" "}
-					</li>
-					<li>
-						Et enfin, <span class="orange-text">travailler en groupe</span> sur
-						des{" "}
-						<span class="orange-text">
-							projets d'applications dynamiques et motivants
-						</span>{" "}
-					</li>
-				</ul>
-				<p>Voici ces projets:</p>
 			</div>
-			<div class="project-container">
-				<div class="softw-container">
-					<img src={ruby} alt="ruby" class="softw-logo" />
-					<img src={rails} alt="rails" class="softw-logo" />
-					<img src={html} alt="html" class="softw-logo" />
-					<img src={css} alt="css" class="softw-logo" />
-					<img src={bootstrap} alt="bootstrap" class="softw-logo" />
-					<img src={javascript} alt="javascript" class="softw-logo" />
-					<img src={stimulus} alt="stimulus" class="softw-logo" />
-					<img src={sql} alt="sql" class="softw-logo" />
-					<img src={heroku} alt="heroku" class="softw-logo" />
-					<img src={ubuntu} alt="ubuntu" class="softw-logo" />
-					<img src={figma} alt="figma" class="softw-logo" />
-					<img src={trello} alt="trello" class="softw-logo" />
+			<div class="intro-paragraphe-2">
+				<p>
+					Mon intérêt pour le développement informatique, nourris par un réseau
+					de proche et d'amis majoritairement dans le domaine de la tech, m'a
+					confortée dans mon désir de reconversion dans ce milieu.
+					<br />
+					Pour suivre ce nouveau parcours, j'ai effectué un apprentissage en
+					autodidacte et en formation de développement web fullstack auprès du
+					Wagon où j'ai pu mettre à contribution mes connaisances de différents
+					langages et frameworks sur des projets stimulants.
+				</p>
+			</div>
+			<div class="lists-container">
+				<div class="soft-fr-list">
+					<h3>Langages, Frameworks et Outils</h3>
+					<div>
+						<ul>
+							<li>
+								Ruby
+								<img src={ruby} alt="ruby" class="softw-logo-small" />
+							</li>
+							<li>
+								Rails
+								<img src={rails} alt="rails" class="softw-logo-small" />
+							</li>
+							<li>
+								Javascript
+								<img
+									src={javascript}
+									alt="javascript"
+									class="softw-logo-small"
+								/>
+							</li>
+							<li>
+								React
+								<img src={react} alt="react" class="softw-logo-small" />
+							</li>
+							<li>
+								Stimulus
+								<img src={stimulus} alt="stimulus" class="softw-logo-small" />
+							</li>
+							<li>
+								HTML
+								<img src={html} alt="html" class="softw-logo-small" />
+							</li>
+							<li>
+								CSS
+								<img src={css} alt="css" class="softw-logo-small" />
+							</li>
+							<li>
+								Bootstrap
+								<img src={bootstrap} alt="bootstrap" class="softw-logo-small" />
+							</li>
+							<li>
+								SQL
+								<img src={sql} alt="sql" class="softw-logo-small" />
+							</li>
+							<li>
+								Ubuntu
+								<img src={ubuntu} alt="ubuntu" class="softw-logo-small" />
+							</li>
+							<li>
+								Heroku
+								<img src={heroku} alt="heroku" class="softw-logo-small" />
+							</li>
+							<li>
+								Figma
+								<img src={figma} alt="figma" class="softw-logo-small" />
+							</li>
+						</ul>
+					</div>
 				</div>
-				<div class="screen-container">
-					<img src={board} alt="board page" class="screen-board" />
-				</div>
-				<div>
-					<Ai-anim />
+				<div class="soft-fr-list">
+					<h3>API utilisées</h3>
+					<div>
+						<ul>
+							<li>
+								OpenAI
+								<img src={openai} alt="openAI" class="softw-logo-small" />
+							</li>
+							<li>
+								Mistral
+								<img src={mistral} alt="mistral" class="softw-logo-small" />
+							</li>
+							<li>
+								Claude
+								<img src={claude} alt="claude" class="softw-logo-small" />
+							</li>
+							<li>
+								Mapbox
+								<img src={mapbox} alt="mapbox" class="softw-logo-small" />
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
+			<AiDuel />
+			<CharactRbnb />
 		</div>
 	);
 }

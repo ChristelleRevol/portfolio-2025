@@ -1,0 +1,199 @@
+.container {
+	margin: 5% 20%;
+}
+
+.introduction {
+	width: 50%;
+	color: #24408e;
+}
+
+.orange-text {
+	color: #e37d00;
+	font-family: "Quicksand", sans-serif;
+	font-weight: bold;
+}
+
+.project-title-div {
+	text-align: center;
+	overflow: hidden;
+}
+
+.project-title {
+	color: #e37d00;
+	font-family: "Quicksand", sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+
+	position: relative;
+	display: inline-block; /* centré par text-align du parent */
+	cursor: pointer;
+}
+
+/* Ligne initiale sous le texte uniquement */
+.project-title::after {
+	content: "";
+	position: absolute;
+	bottom: -6px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	height: 1px;
+	background-color: currentColor;
+	transition: width 0.4s ease;
+	transform-origin: center;
+}
+
+/* Étirement au hover : vers les bords du conteneur parent */
+.project-title:hover::after {
+	width: calc(100% + 60vw);
+}
+
+.flex-left {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 30%;
+	justify-content: space-evenly;
+}
+
+.flex-right {
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+}
+
+.flex-bottom-char {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	gap: 20px;
+}
+
+.project-char-container {
+	padding: 20px;
+	margin: 20px 0;
+	background-color: #929dbb;
+	border-radius: 10px;
+	display: flex;
+	gap: 20px;
+}
+
+.char-softw-container {
+	background-color: #5e6e9b;
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 2% 0;
+}
+
+.char-softw-logo {
+	height: 60px;
+	object-fit: cover;
+	margin: 10px;
+}
+
+.char-screen-board {
+	border-radius: 10px;
+	width: 100%;
+}
+
+.char-screen-container {
+	width: 100%;
+}
+
+.char-card-container {
+	height: 400px;
+	border-radius: 25px;
+	display: flex;
+	justify-content: center;
+}
+
+.char-card {
+	height: 100%;
+	border-radius: 25px;
+}
+
+.booking-card-container {
+	width: 400px;
+	display: flex;
+	justify-content: center;
+	height: 205px;
+}
+
+.booking-card {
+	width: 400px;
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+.logo-container {
+	width: 130px;
+	display: flex;
+	align-items: center;
+}
+
+.charact-rbnb-logo {
+	object-fit: contain;
+	margin-right: 10px;
+	border-radius: 10px;
+}
+
+.box-shadow-blue {
+	box-shadow: 3px 3px 7px #1c326fd1;
+}
+
+@media (max-width: 1980px) {
+	.char-card-container {
+		height: 370px;
+	}
+}
+
+@media (max-width: 1550px) {
+	.flex-left {
+		flex-direction: row;
+		width: 100%;
+	}
+	.flex-right {
+		width: 100%;
+	}
+	.project-char-container {
+		flex-direction: column;
+	}
+	.char-softw-container {
+		width: 40%;
+	}
+}
+
+@media (max-width: 900px) {
+	.flex-left {
+		flex-direction: column;
+	}
+	.char-softw-logo {
+		height: 50px;
+	}
+	.char-card-container {
+		height: 300px;
+	}
+	.flex-bottom-char {
+		flex-direction: column;
+	}
+	.project-char-container {
+		width: 100%;
+	}
+	.booking-card-container {
+		width: 100%;
+	}
+	.char-softw-container {
+		width: 100%;
+	}
+	.logo-container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+}

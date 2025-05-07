@@ -1,66 +1,3 @@
-.container {
-	margin: 5% 20%;
-}
-
-.introduction {
-	width: 60%;
-	color: #24408e;
-	margin: 10px;
-}
-
-.intro-paragraphe-2 {
-	margin-top: 8%;
-	width: 60%;
-	color: #24408e;
-	margin-left: 10px;
-}
-
-.orange-text {
-	color: #e37d00;
-	font-family: "Quicksand", sans-serif;
-	font-weight: bold;
-}
-
-.lists-container {
-	display: flex;
-	justify-content: space-around;
-	height: 350px;
-}
-
-.soft-fr-list {
-	width: 365px;
-	height: 260px;
-}
-
-.soft-fr-list div {
-	width: 365px;
-	height: 260px;
-	border: 1px solid #e37d00;
-	border-radius: 10px;
-	overflow-y: auto;
-	scrollbar-color: #24408e #ffffff;
-	scrollbar-width: thin;
-	background-color: white;
-}
-
-h3 {
-	color: #e37d00;
-	font-family: "Quicksand", sans-serif;
-	font-weight: bold;
-	text-align: center;
-}
-
-.soft-fr-list li {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	color: #24408e;
-	font-family: "Quicksand", sans-serif;
-	font-weight: bold;
-	margin: 10px;
-	padding-right: 10px;
-}
-
 .project-title-div {
 	text-align: center;
 	overflow: hidden;
@@ -115,19 +52,6 @@ h3 {
 	gap: 20px;
 }
 
-.display-left {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-	width: 40%;
-}
-
-.display-right {
-	width: 60%;
-	display: flex;
-	flex-wrap: wrap;
-}
-
 .project-container {
 	padding: 20px;
 	margin: 20px 0;
@@ -137,19 +61,6 @@ h3 {
 	gap: 10px; */
 	background-color: #929dbb;
 	border-radius: 10px;
-}
-
-.project-char-container {
-	padding: 20px;
-	margin: 20px 0;
-	/* display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	gap: 10px; */
-	background-color: #929dbb;
-	border-radius: 10px;
-	display: flex;
-	gap: 20px;
 }
 
 .softw-container {
@@ -173,11 +84,6 @@ h3 {
 	/* width: 60px; */
 	object-fit: cover;
 	margin: 10px;
-}
-
-.softw-logo-small {
-	height: 40px;
-	object-fit: cover;
 }
 
 .screen-board {
@@ -206,16 +112,6 @@ h3 {
 	bottom: 10%;
 }
 
-.char-card-container {
-	height: 300px;
-	border-radius: 20px;
-}
-
-.char-card {
-	height: 100%;
-	border-radius: 20px;
-}
-
 .prompt-card-container {
 	/* grid-column: 2 / 3;
 	grid-row: 2 / 2; */
@@ -229,21 +125,9 @@ h3 {
 	border-radius: 10px;
 }
 
-.booking-card-container {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-}
-
-.booking-card {
-	width: 400px;
-	border-radius: 10px;
-}
-
-.logo-container {
-	/* margin-top: 2%;
-	margin-right: 3%; */
-	width: 37%;
+.ai-logo-container {
+	width: 35%;
+	margin-top: 2%;
 }
 
 .ai-logo {
@@ -251,13 +135,7 @@ h3 {
 	object-fit: contain;
 	margin: 10px;
 	border-radius: 10px;
-}
-
-.charact-rbnb-logo {
-	height: 130px;
-	object-fit: contain;
-	margin-right: 10px;
-	border-radius: 10px;
+	margin-left: 20px;
 }
 
 .lottie-wrapper {
