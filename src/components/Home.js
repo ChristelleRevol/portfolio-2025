@@ -15,11 +15,13 @@ import heroku from "../assets/Logos/heroku.png";
 import sql from "../assets/Logos/Sql.png";
 import ubuntu from "../assets/Logos/ubuntu.png";
 import stimulus from "../assets/Logos/stimulus.png";
+import trello from "../assets/Logos/trello.png";
 
 import mapbox from "../assets/Logos/mapbox.png";
 import openai from "../assets/Logos/openai.png";
 import mistral from "../assets/Logos/Mistral.png";
 import claude from "../assets/Logos/claude.png";
+import openweather from "../assets/Logos/openweather.png";
 
 function Home() {
 	console.log("width: ", window.innerWidth);
@@ -32,7 +34,7 @@ function Home() {
 					Storyboardeuse et illustratrice reconvertie dans le développement web
 					fullstack, J'ai à cœur de mettre mes compétences au services de
 					projets innovants alliant technologie et lucidité sur les enjeux de
-					demain
+					demain.
 				</p>
 			</div>
 			<div class="intro-paragraphe-2">
@@ -104,6 +106,10 @@ function Home() {
 								Figma
 								<img src={figma} alt="figma" class="softw-logo-small" />
 							</li>
+							<li>
+								Trello
+								<img src={trello} alt="trello" class="softw-logo-small" />
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -126,6 +132,14 @@ function Home() {
 							<li>
 								Mapbox
 								<img src={mapbox} alt="mapbox" class="softw-logo-small" />
+							</li>
+							<li>
+								OpenWeather
+								<img
+									src={openweather}
+									alt="openweather"
+									class="softw-logo-small"
+								/>
 							</li>
 						</ul>
 					</div>
