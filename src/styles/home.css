@@ -75,27 +75,20 @@ h3 {
 	text-align: center;
 
 	position: relative;
-	display: inline-block; /* centré par text-align du parent */
-	cursor: pointer;
+	display: inline-block;
+	cursor: default;
 }
 
-/* Ligne initiale sous le texte uniquement */
 .project-title::after {
 	content: "";
 	position: absolute;
 	bottom: -6px;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 100%;
+	width: calc(100% + var(--underline-extra-width, 0vw));
 	height: 1px;
 	background-color: currentColor;
-	transition: width 0.4s ease;
-	transform-origin: center;
-}
-
-/* Étirement au hover : vers les bords du conteneur parent */
-.project-title:hover::after {
-	width: calc(100% + 60vw);
+	transition: width 0.3s ease;
 }
 
 .flex-up {
