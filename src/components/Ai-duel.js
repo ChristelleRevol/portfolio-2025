@@ -1,3 +1,4 @@
+import React, { useEffect, useRef } from "react";
 import "../styles/ai-duel.css";
 import AiAnim from "./Ai-anim";
 import "@dotlottie/player-component";
@@ -22,10 +23,49 @@ import prompt_card from "../assets/Screenshots/prompt_card.jpg";
 import app_logo from "../assets/Logo_AI-Duel.svg";
 
 function AiDuel() {
+	const titleRef = useRef(null); // ref pour accéder à l'élément DOM
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const title = titleRef.current;
+			if (!title) return;
+
+			const rect = title.getBoundingClientRect();
+			const centerY = rect.top + rect.height / 2;
+			const viewportHeight = window.innerHeight;
+
+			const centerScreen = viewportHeight / 2;
+
+			if (centerY <= centerScreen) {
+				// Quand on est au-dessus du centre (scroll vers le bas), barre à largeur max
+				title.style.setProperty("--underline-extra-width", "60vw");
+			} else {
+				// Quand on est en dessous du centre (scroll vers le haut), barre rétrécit linéairement
+				const progress = 1 - (centerY - centerScreen) / centerScreen;
+				const clamped = Math.max(0, Math.min(progress, 1));
+				const width = 60 * clamped;
+				title.style.setProperty("--underline-extra-width", `${width}vw`);
+			}
+		};
+
+		// Appelle au scroll
+		window.addEventListener("scroll", handleScroll);
+
+		// Appelle une fois au montage pour initialiser
+		handleScroll();
+
+		// Nettoyage de l'event listener
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
 	return (
 		<div>
 			<div class="project-title-div">
-				<h2 class="project-title">AI-Duel</h2>
+				<h2 class="project-title" ref={titleRef}>
+					AI-Duel
+				</h2>
 			</div>
 			<div class="project-container">
 				<div class="flex-up">

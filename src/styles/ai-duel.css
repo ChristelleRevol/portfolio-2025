@@ -1,9 +1,6 @@
-.project-title-div {
-	text-align: center;
-	overflow: hidden;
-}
+/*  anim soulignement avec hover
 
-.project-title {
+	.project-title {
 	color: #e37d00;
 	font-family: "Quicksand", sans-serif;
 	font-weight: bold;
@@ -11,11 +8,11 @@
 	text-align: center;
 
 	position: relative;
-	display: inline-block; /* centré par text-align du parent */
+	display: inline-block; centré par text-align du parent
 	cursor: pointer;
 }
 
-/* Ligne initiale sous le texte uniquement */
+Ligne initiale sous le texte uniquement
 .project-title::after {
 	content: "";
 	position: absolute;
@@ -29,10 +26,10 @@
 	transform-origin: center;
 }
 
-/* Étirement au hover : vers les bords du conteneur parent */
+Étirement au hover : vers les bords du conteneur parent
 .project-title:hover::after {
 	width: calc(100% + 60vw);
-}
+} */
 
 .flex-up {
 	display: flex;

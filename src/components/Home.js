@@ -20,9 +20,12 @@ import mapbox from "../assets/Logos/mapbox.png";
 import openai from "../assets/Logos/openai.png";
 import mistral from "../assets/Logos/Mistral.png";
 import claude from "../assets/Logos/claude.png";
+import openweather from "../assets/Logos/openweather.png";
+import cloudinary from "../assets/Logos/cloudinary.png";
 
 function Home() {
 	console.log("width: ", window.innerWidth);
+
 	return (
 		<div class="container">
 			<div class="introduction">
@@ -124,8 +127,24 @@ function Home() {
 								<img src={claude} alt="claude" class="softw-logo-small" />
 							</li>
 							<li>
+								Cloudinary
+								<img
+									src={cloudinary}
+									alt="cloudinary"
+									class="softw-logo-small"
+								/>
+							</li>
+							<li>
 								Mapbox
 								<img src={mapbox} alt="mapbox" class="softw-logo-small" />
+							</li>
+							<li>
+								OpenWeatherMap
+								<img
+									src={openweather}
+									alt="openweather"
+									class="softw-logo-small"
+								/>
 							</li>
 						</ul>
 					</div>
