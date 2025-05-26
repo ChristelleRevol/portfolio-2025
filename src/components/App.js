@@ -43,9 +43,14 @@ function App() {
 				style={{ position: "relative", minHeight: "100vh", overflow: "hidden" }}
 			>
 				<ParticlesBackground />
-				<div style={{ position: "relative", zIndex: 1 }}>
+				<div
+					style={{ position: "relative", zIndex: 1 }}
+					className="app-display"
+				>
 					<Navbar />
-					<Contact />
+					<div className="main">
+						<Contact />
+					</div>
 					<Footer />
 				</div>
 			</div>
