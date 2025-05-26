@@ -156,7 +156,19 @@ function Home() {
 				</div>
 			</div>
 			<AiDuel />
+			<p class="introduction">
+				Application en architecture RESTful permettant d'envoyer un prompt à
+				plusieurs IA et de recevoir leurs réponses. La communauté vote ensuite
+				pour la réponse jugée la meilleure.
+				<br />
+				Cette application permet d'évaluer la performance de différentes IA de
+				manière impartiale.
+			</p>
 			<CharactRbnb />
+			<p class="introduction">
+				Application en architecture RESTful utilisant un modèle CRUD pour louer
+				des personnages fictifs
+			</p>
 		</div>
 	);
 }
