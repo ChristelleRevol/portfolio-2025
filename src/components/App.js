@@ -3,6 +3,7 @@ import Home from "./Home";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import ShowAiDuel from "./ShowAiDuel";
+import Contact from "./Contact";
 import ParticlesBackground from "./ParticlesBackground";
 
 function App() {
@@ -30,6 +31,22 @@ function App() {
 				<div style={{ position: "relative", zIndex: 1 }}>
 					<Navbar />
 					<ShowAiDuel />
+					<Footer />
+				</div>
+			</div>
+		);
+	}
+
+	if (window.location.pathname === "/contact") {
+		return (
+			<div
+				style={{ position: "relative", minHeight: "100vh", overflow: "hidden" }}
+			>
+				<ParticlesBackground />
+				<div style={{ position: "relative", zIndex: 1 }}>
+					<Navbar />
+					<Contact />
+					<Footer />
 				</div>
 			</div>
 		);
