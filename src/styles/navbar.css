@@ -88,7 +88,7 @@ li {
 }
 
 .mobile {
-	visibility: hidden;
+	display: none;
 	margin: auto;
 }
 
@@ -140,7 +140,7 @@ li {
 		display: none;
 	}
 	.mobile {
-		visibility: visible;
+		display: flex;
 	}
 	.avatar {
 		width: 100px;
