@@ -37,7 +37,7 @@ function Contact() {
 		}
 
 		try {
-			const res = await fetch("http://localhost:5000/send", {
+			const res = await fetch(`${process.env.REACT_APP_WEB_URL}/send`, {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify({ name, email, message }), // On envoie les données
@@ -63,7 +63,10 @@ function Contact() {
 			<div class="references">
 				<div class="ref-group">
 					<h2>Email</h2>
-					<p>christellerevol.works@gmail.com</p>
+					<a href="mailto:christellerevol.works@gmail.com">
+						christellerevol.works@gmail.com
+					</a>
+					{/* <p>christellerevol.works@gmail.com</p> */}
 				</div>
 				<div class="ref-group">
 					<h2>Réseaux Sociaux</h2>

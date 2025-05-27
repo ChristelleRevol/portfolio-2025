@@ -134,8 +134,17 @@
 }
 
 @media (max-width: 900px) {
+	.project-char-container {
+		padding: 0;
+	}
 	.flex-left {
 		flex-direction: column;
+		margin: 20px auto 10px auto;
+		width: 80%;
+	}
+	.flex-right {
+		margin: 10px auto 20px auto;
+		width: 90%;
 	}
 	.char-softw-logo {
 		height: 50px;
@@ -159,5 +168,13 @@
 		width: 100%;
 		display: flex;
 		justify-content: center;
+	}
+
+	.booking-card {
+		width: 200px;
+		height: 105px;
+	}
+	.booking-card-container {
+		height: 110px;
 	}
 }

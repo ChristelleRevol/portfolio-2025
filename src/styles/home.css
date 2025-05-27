@@ -25,23 +25,32 @@
 .lists-container {
 	display: flex;
 	justify-content: space-around;
+	gap: 20px;
 	height: 350px;
+}
+
+.scroll-container {
+	width: 100%;
+	height: 260px;
+	border: 1px solid #e37d00;
+	border-radius: 10px;
+	background-color: white;
+	overflow: hidden; /* cache les coins arrondis */
+	display: flex;
+	flex-direction: column;
 }
 
 .soft-fr-list {
 	width: 365px;
-	height: 260px;
 }
 
-.soft-fr-list div {
-	width: 365px;
-	height: 260px;
-	border: 1px solid #e37d00;
-	border-radius: 10px;
+.scroll-container ul {
+	flex: 1;
 	overflow-y: auto;
+	margin: 4px 3px;
+	padding: 10px;
 	scrollbar-color: #24408e #ffffff;
 	scrollbar-width: thin;
-	background-color: white;
 }
 
 h3 {
@@ -323,5 +332,23 @@ dotlottie-player {
 	}
 	.flex-down {
 		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 1025px) {
+	.lists-container {
+		flex-direction: column;
+		height: 100%;
+		align-items: center;
+	}
+}
+
+@media (max-width: 500px) {
+	.soft-fr-list {
+		width: 240px;
+	}
+
+	.softw-logo {
+		height: 35px;
 	}
 }

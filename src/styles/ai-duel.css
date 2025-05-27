@@ -76,13 +76,6 @@ Ligne initiale sous le texte uniquement
 	padding: 2% 0;
 }
 
-.softw-logo {
-	height: 60px;
-	/* width: 60px; */
-	object-fit: cover;
-	margin: 10px;
-}
-
 .screen-board {
 	border-radius: 10px;
 	width: 100%;
@@ -185,7 +178,7 @@ dotlottie-player {
 	}
 	.anim-container {
 		margin: 2% auto 0 auto;
-		height: 300px;
+		height: 160px;
 		width: 500px;
 	}
 	.prompt-card-container {
@@ -201,8 +194,27 @@ dotlottie-player {
 	}
 	.flex-up {
 		flex-direction: column;
+		margin-bottom: 10px;
 	}
 	.flex-down {
 		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 900px) {
+	.prompt-card-container {
+		width: 100%;
+	}
+	.ai-logo-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.ai-logo {
+		margin: auto;
+	}
+	.lottie-wrapper {
+		margin: auto;
+		height: 100%;
 	}
 }

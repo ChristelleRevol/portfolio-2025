@@ -34,27 +34,26 @@ function Home() {
 					Bonjour, je suis Christelle Revol!
 					<p />
 					Storyboardeuse et illustratrice reconvertie dans le développement web
-					fullstack, J'ai à cœur de mettre mes compétences au services de
-					projets innovants alliant technologie et lucidité sur les enjeux de
-					demain.
+					fullstack, J'ai à cœur de mettre mes compétences au service de projets
+					innovants alliant technologie et lucidité sur les enjeux de demain.
 				</p>
 			</div>
 			<div class="intro-paragraphe-2">
 				<p>
-					Mon intérêt pour le développement informatique, nourris par un réseau
-					de proche et d'amis majoritairement dans le domaine de la tech, m'a
+					Mon intérêt pour le développement informatique, nourri par un réseau
+					de proches et d'amis majoritairement dans le domaine de la tech, m'a
 					confortée dans mon désir de reconversion dans ce milieu.
 					<br />
 					Pour suivre ce nouveau parcours, j'ai effectué un apprentissage en
 					autodidacte et en formation de développement web fullstack auprès du
-					Wagon où j'ai pu mettre à contribution mes connaisances de différents
+					Wagon où j'ai pu mettre à contribution mes connaissances de différents
 					langages et frameworks sur des projets stimulants.
 				</p>
 			</div>
 			<div class="lists-container">
 				<div class="soft-fr-list">
 					<h3>Langages, Frameworks et Outils</h3>
-					<div>
+					<div class="scroll-container">
 						<ul>
 							<li>
 								Ruby
@@ -117,7 +116,7 @@ function Home() {
 				</div>
 				<div class="soft-fr-list">
 					<h3>API utilisées</h3>
-					<div>
+					<div class="scroll-container">
 						<ul>
 							<li>
 								OpenAI

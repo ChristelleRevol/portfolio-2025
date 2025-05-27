@@ -136,10 +136,12 @@ textarea:focus {
 	font-family: "Quicksand", sans-serif;
 }
 
-.ref-group p {
+.ref-group p,
+a {
 	color: #24408e;
 	margin-left: 10px;
 	font-family: "Quicksand", sans-serif;
+	text-decoration: none;
 }
 
 .status-msg {

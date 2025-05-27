@@ -67,18 +67,18 @@ function CharactRbnb() {
 			<div class="project-char-container">
 				<div class="flex-left">
 					<div class="char-softw-container box-shadow-blue">
-						<img src={ruby} alt="ruby" class="char-softw-logo" />
-						<img src={rails} alt="rails" class="char-softw-logo" />
-						<img src={html} alt="html" class="char-softw-logo" />
-						<img src={css} alt="css" class="char-softw-logo" />
-						<img src={bootstrap} alt="bootstrap" class="char-softw-logo" />
-						<img src={javascript} alt="javascript" class="char-softw-logo" />
-						<img src={stimulus} alt="stimulus" class="char-softw-logo" />
-						<img src={ubuntu} alt="ubuntu" class="char-softw-logo" />
-						<img src={figma} alt="figma" class="char-softw-logo" />
-						<img src={trello} alt="trello" class="char-softw-logo" />
-						<img src={photoshop} alt="photoshop" class="char-softw-logo" />
-						<img src={illustrator} alt="illustrator" class="char-softw-logo" />
+						<img src={ruby} alt="ruby" class="softw-logo" />
+						<img src={rails} alt="rails" class="softw-logo" />
+						<img src={html} alt="html" class="softw-logo" />
+						<img src={css} alt="css" class="softw-logo" />
+						<img src={bootstrap} alt="bootstrap" class="softw-logo" />
+						<img src={javascript} alt="javascript" class="softw-logo" />
+						<img src={stimulus} alt="stimulus" class="softw-logo" />
+						<img src={ubuntu} alt="ubuntu" class="softw-logo" />
+						<img src={figma} alt="figma" class="softw-logo" />
+						<img src={trello} alt="trello" class="softw-logo" />
+						<img src={photoshop} alt="photoshop" class="softw-logo" />
+						<img src={illustrator} alt="illustrator" class="softw-logo" />
 					</div>
 					<div class="char-card-container">
 						<img
