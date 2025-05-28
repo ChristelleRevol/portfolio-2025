@@ -31,10 +31,12 @@ function Contact() {
 			return;
 		}
 
-		if (!isMailValid) {
+		if (!isMailValid(email)) {
 			setStatus("adresse email invalide");
 			return;
 		}
+
+		console.log("URL utilisée :", process.env.REACT_APP_WEB_URL);
 
 		try {
 			const res = await fetch(`${process.env.REACT_APP_WEB_URL}/send`, {
