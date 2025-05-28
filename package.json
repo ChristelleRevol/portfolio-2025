@@ -37,6 +37,7 @@
 		"font-awesome": "^4.7.0",
 		"fs-extra": "^10.0.0",
 		"html-webpack-plugin": "^5.5.0",
+		"http-proxy-middleware": "^3.0.5",
 		"identity-obj-proxy": "^3.0.0",
 		"jest": "^27.4.3",
 		"jest-resolve": "^27.4.2",
@@ -77,10 +78,17 @@
 		"test": "node scripts/test.js"
 	},
 	"eslintConfig": {
-		"extends": ["react-app", "react-app/jest"]
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
 	},
 	"browserslist": {
-		"production": [">0.2%", "not dead", "not op_mini all"],
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
 		"development": [
 			"last 1 chrome version",
 			"last 1 firefox version",
@@ -88,10 +96,19 @@
 		]
 	},
 	"jest": {
-		"roots": ["<rootDir>/src"],
-		"collectCoverageFrom": ["src/**/*.{js,jsx,ts,tsx}", "!src/**/*.d.ts"],
-		"setupFiles": ["react-app-polyfill/jsdom"],
-		"setupFilesAfterEnv": ["<rootDir>/src/setupTests.js"],
+		"roots": [
+			"<rootDir>/src"
+		],
+		"collectCoverageFrom": [
+			"src/**/*.{js,jsx,ts,tsx}",
+			"!src/**/*.d.ts"
+		],
+		"setupFiles": [
+			"react-app-polyfill/jsdom"
+		],
+		"setupFilesAfterEnv": [
+			"<rootDir>/src/setupTests.js"
+		],
 		"testMatch": [
 			"<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
 			"<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
@@ -130,10 +147,11 @@
 		"resetMocks": true
 	},
 	"babel": {
-		"presets": ["react-app"]
+		"presets": [
+			"react-app"
+		]
 	},
 	"devDependencies": {
 		"concurrently": "^9.1.2"
-	},
-	"proxy": "http://localhost:5000"
+	}
 }
