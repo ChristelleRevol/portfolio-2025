@@ -39,7 +39,7 @@ function Contact() {
 		console.log("URL utilisée :", process.env.REACT_APP_WEB_URL);
 
 		try {
-			const res = await fetch("/send", {
+			const res = await fetch(`${process.env.REACT_APP_WEB_URL}/send`, {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify({ name, email, message }), // On envoie les données
