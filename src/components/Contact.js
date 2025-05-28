@@ -94,12 +94,14 @@ function Contact() {
 					</div>
 				</div>
 			</div>
+
+			{/*
 			<div class="form">
 				<h2 class="form-text">Contactez-moi</h2>
 				<form onSubmit={handleSubmit}>
 					<div class="form-inside">
 						<div class="inputs-group">
-							{/* <label htmlFor="name">Nom/Entreprise</label> */}
+
 							<input
 								id="name"
 								type="text"
@@ -110,7 +112,7 @@ function Contact() {
 								className="form-background-color form-margin-right form-text"
 							/>
 
-							{/* <label htmlFor="mail">Email</label> */}
+
 							<input
 								id="mail"
 								type="email"
@@ -121,7 +123,7 @@ function Contact() {
 								className="form-background-color form-text"
 							/>
 						</div>
-						{/* <label htmlFor="message">Message</label> */}
+
 						<textarea
 							id="message"
 							placeholder="Message"
@@ -142,6 +144,7 @@ function Contact() {
 
 				{status && <p class="status-msg">{status}</p>}
 			</div>
+			*/}
 		</div>
 	);
 }
