@@ -39,7 +39,7 @@ function Contact() {
 		console.log("URL utilisée :", process.env.REACT_APP_WEB_URL);
 
 		try {
-			const res = await fetch(`${process.env.REACT_APP_WEB_URL}/send`, {
+			const res = await fetch("/send", {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify({ name, email, message }), // On envoie les données
@@ -105,7 +105,6 @@ function Contact() {
 								type="text"
 								placeholder="Nom/Entreprise"
 								value={name}
-								onClick={(e) => setName("")}
 								onChange={(e) => setName(e.target.value)}
 								required
 								className="form-background-color form-margin-right form-text"
