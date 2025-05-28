@@ -39,7 +39,7 @@ function Contact() {
 		console.log("URL utilisée :", process.env.REACT_APP_WEB_URL);
 
 		try {
-			const res = await fetch(`${process.env.REACT_APP_WEB_URL}/send`, {
+			const res = await fetch(`${process.env.REACT_APP_WEB_URL}/api/send`, {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify({ name, email, message }), // On envoie les données
@@ -95,13 +95,11 @@ function Contact() {
 				</div>
 			</div>
 
-			{/*
 			<div class="form">
 				<h2 class="form-text">Contactez-moi</h2>
 				<form onSubmit={handleSubmit}>
 					<div class="form-inside">
 						<div class="inputs-group">
-
 							<input
 								id="name"
 								type="text"
@@ -111,7 +109,6 @@ function Contact() {
 								required
 								className="form-background-color form-margin-right form-text"
 							/>
-
 
 							<input
 								id="mail"
@@ -144,7 +141,6 @@ function Contact() {
 
 				{status && <p class="status-msg">{status}</p>}
 			</div>
-			*/}
 		</div>
 	);
 }

@@ -32,7 +32,7 @@
 		"eslint": "^8.3.0",
 		"eslint-config-react-app": "^7.0.1",
 		"eslint-webpack-plugin": "^3.1.1",
-		"express": "4.18.2",
+		"express": "^5.1.0",
 		"file-loader": "^6.2.0",
 		"font-awesome": "^4.7.0",
 		"fs-extra": "^10.0.0",
@@ -76,7 +76,7 @@
 		"start": "WATCHPACK_POLLING=true node scripts/start.js",
 		"build": "node scripts/build.js",
 		"test": "node scripts/test.js",
-		"start-server": "nodemon routes.js"
+		"start-server": "node routes.js"
 	},
 	"eslintConfig": {
 		"extends": ["react-app", "react-app/jest"]
@@ -135,7 +135,6 @@
 		"presets": ["react-app"]
 	},
 	"devDependencies": {
-		"concurrently": "^9.1.2",
-		"nodemon": "^3.1.10"
+		"concurrently": "^9.1.2"
 	}
 }
