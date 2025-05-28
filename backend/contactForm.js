@@ -52,13 +52,13 @@ app.listen(PORT, () => {
 	console.log(`Serveur en écoute sur le port ${PORT}`);
 });
 
-const path = require("path");
+// const path = require("path");
 
-// Sert les fichiers React si on est en production
-if (process.env.NODE_ENV === "production") {
-	app.use(express.static(path.join(__dirname, "..frontend/build")));
+// // Sert les fichiers React si on est en production
+// // if (process.env.NODE_ENV === "production") {
+// // 	app.use(express.static(path.join(__dirname, "..frontend/build")));
 
-	app.get("*", (req, res) => {
-		res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
-	});
-}
+// // 	app.get("*", (req, res) => {
+// // 		res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
+// // 	});
+// // }
